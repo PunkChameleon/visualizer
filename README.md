@@ -1,7 +1,7 @@
 # Visualizer
 ## jQuery plugin for easy visualization of datastes
 
-Visualizer allows developers to easily organize and manage visual elements for large datasets.
+Visualizer allows developers to easily organize and manage visual elements for large datasets on top of images.
 
 ### To get started, here are the following rules:
 1. Put an id of 'visual-container' around the containing div that holds the background image and the datasets you wish to show and hide on.
