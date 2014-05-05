@@ -1,0 +1,64 @@
+<html>
+	<body>
+
+		<style type="text/css">
+			/* Custom Styles -- They have NO effect on visualizer (unless you start messing with hidden things, man!) */
+			.map, #form {
+				width: 49%;
+				height: 500px;
+			}
+
+			.map {
+				float:left;
+				border: 1px solid black;
+			}
+
+			#opt1 .opt1-item {
+				color: red;
+			}
+
+			#opt2 .opt2-item {
+				color: blue;
+			}
+
+			#opt3 .opt3-item {
+				color: green;
+			}
+
+		</style>
+
+		<div id="wrapper">
+			<div id="visual-container" class="map"> <!-- include an id of 'visual-container' on the div containing the visual sets -->
+				<div id="opt1" class="visual-set"> <!-- Each visual set needs a unique id AND visual-set class -->
+					<div class="opt1-item">1</div> <!-- All of this can be customized -->
+					<div class="opt1-item">2</div>
+					<div class="opt1-item">3</div>
+				</div>
+				<div id="opt2" class="visual-set">
+					<div class="opt2-item">4</div>
+					<div class="opt2-item">5</div>
+					<div class="opt2-item">6</div>
+				</div>
+				<div id="opt3" class="visual-set">
+					<div class="opt3-item">7</div>
+					<div class="opt3-item">8</div>
+					<div class="opt3-item">9</div>
+				</div>
+			</div>
+			<div id="form">
+				<select id="visual-set-select"> <!-- Make sure the select element has an id of 'visual-set-select' -->
+					<option value="opt1">Option 1</option> <!-- Each option needs a value that MATCHES the unique id on the visual set -->
+					<option value="opt2">Option 2</option>
+					<option value="opt3">Option 3</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Include jQuery BEFORE visualizer (this if from the jQuery CDN) -->
+		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		
+		<!-- Include the visualizer script -->
+		<script src="visualizer.js"></script>
+	
+	</body>
+</html>
